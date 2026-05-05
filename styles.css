@@ -1,4 +1,3 @@
-/* Vera landing — palette from brand ref: cream, earthy brown, soft tan */
 :root {
   --bg: #fdfbf7;
   --bg-soft: #eae0d5;
@@ -61,13 +60,21 @@ main,
   position: absolute;
   left: calc(var(--x) * 1%);
   top: calc(var(--y) * 1%);
-  font-size: var(--s);
+  width: var(--s);
+  height: var(--s);
   opacity: 0.70;
   transform: translate(-50%, -50%) rotate(var(--r));
   filter: saturate(1.05) contrast(1.02);
   animation: bgFloat var(--d) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
   user-select: none;
+}
+
+.bg-emoji__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @keyframes bgFloat {
@@ -204,11 +211,17 @@ main,
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.25rem;
   border-radius: 46% 54% 52% 48% / 48% 46% 54% 52%;
   background: rgba(217, 197, 178, 0.28);
   border: 1px solid rgba(115, 92, 73, 0.14);
   box-shadow: 0 14px 40px rgba(61, 61, 61, 0.08);
+}
+
+.emoji-figure img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+  display: block;
 }
 
 .split--hero {
@@ -220,13 +233,22 @@ main,
 .split--hero .emoji-figure {
   width: 220px;
   height: 220px;
-  font-size: 5rem;
   background: rgba(234, 224, 213, 0.55);
 }
 
-.about-emoji {
-  font-size: 3.2rem;
-  line-height: 1;
+.split--hero .emoji-figure img {
+  width: 82%;
+  height: 82%;
+}
+
+.about-emoji-img {
+  width: 72%;
+  height: 72%;
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .split--proof .emoji-figure {
@@ -333,7 +355,6 @@ main,
   letter-spacing: 0.03em;
 }
 
-/* Relatability */
 .section--relat .section-heading {
   text-align: left;
   font-size: 1.15rem;
