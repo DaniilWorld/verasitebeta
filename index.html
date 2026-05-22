@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +9,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- Floating background elements -->
   <div class="bg-emoji" aria-hidden="true">
-    <span class="bg-emoji__item" style="--x:6;--y:12;--s:56px;--r:-10deg;--d:58s;--delay:-12s;"><img src="img/branch.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:10;--y:86;--s:48px;--r:8deg;--d:64s;--delay:-28s;"><img src="img/star.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:94;--y:18;--s:60px;--r:12deg;--d:62s;--delay:-6s;"><img src="img/brain.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:96;--y:78;--s:54px;--r:-8deg;--d:70s;--delay:-18s;"><img src="img/pazzl.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:4;--y:52;--s:52px;--r:14deg;--d:66s;--delay:-22s;"><img src="img/grass.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:98;--y:52;--s:50px;--r:-14deg;--d:72s;--delay:-34s;"><img src="img/chart.png" alt="" /></span>
+    <span class="bg-emoji__item" style="--x:6;--y:12;--s:56px;--r:-10deg;--d:58s;--delay:-12s;"><img
+        src="img/branch.png" alt="" /></span>
+    <span class="bg-emoji__item" style="--x:10;--y:86;--s:48px;--r:8deg;--d:64s;--delay:-28s;"><img src="img/star.png"
+        alt="" /></span>
+    <span class="bg-emoji__item" style="--x:94;--y:18;--s:60px;--r:12deg;--d:62s;--delay:-6s;"><img src="img/brain.png"
+        alt="" /></span>
+    <span class="bg-emoji__item" style="--x:96;--y:78;--s:54px;--r:-8deg;--d:70s;--delay:-18s;"><img src="img/pazzl.png"
+        alt="" /></span>
+    <span class="bg-emoji__item" style="--x:4;--y:52;--s:52px;--r:14deg;--d:66s;--delay:-22s;"><img src="img/grass.png"
+        alt="" /></span>
+    <span class="bg-emoji__item" style="--x:98;--y:52;--s:50px;--r:-14deg;--d:72s;--delay:-34s;"><img
+        src="img/chart.png" alt="" /></span>
+  </div>
+  <div class="ambient-layer" aria-hidden="true">
+    <span class="ambient-layer__shape ambient-layer__shape--one"></span>
+    <span class="ambient-layer__shape ambient-layer__shape--two"></span>
+    <span class="ambient-layer__shape ambient-layer__shape--three"></span>
   </div>
 
   <header class="site-header">
@@ -35,9 +47,14 @@
 
     <!-- HERO -->
     <section class="section section--hero" id="hero">
+      <div class="hero-orbit" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="split split--hero">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <h1 class="hero-brand">Vera</h1>
 
@@ -80,8 +97,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure emoji-figure--hero motion-drift">
             <img src="img/brain.png" alt="" />
           </div>
         </div>
@@ -94,11 +111,11 @@
     <div class="section-divider"></div>
 
     <!-- RELATABILITY -->
-    <section class="section section--relat" id="relatability">
+    <section class="section section--relat section--wide section--wash" id="relatability">
 
-      <div class="split">
+      <div class="split split--relat">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <h2 class="section-heading">
             You might recognise this:
@@ -113,8 +130,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure emoji-figure--offset motion-drift">
             <img src="img/branch.png" alt="" />
           </div>
         </div>
@@ -126,11 +143,11 @@
     <div class="section-divider"></div>
 
     <!-- METHOD -->
-    <section class="section section--method" id="method">
+    <section class="section section--method section--narrow" id="method">
 
-      <div class="split">
+      <div class="split split--reverse">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <p>
             Most people think they need more time.<br />
@@ -156,8 +173,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure emoji-figure--small motion-drift">
             <img src="img/clock.png" alt="" />
           </div>
         </div>
@@ -169,11 +186,11 @@
     <div class="section-divider"></div>
 
     <!-- DIFFERENTIATION -->
-    <section class="section section--diff" id="approach">
+    <section class="section section--diff section--panel" id="approach">
 
       <div class="split">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <p class="diff-lead">
             I don’t teach. I don’t overload.<br />
@@ -210,8 +227,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure motion-drift">
             <img src="img/pazzl.png" alt="" />
           </div>
         </div>
@@ -223,9 +240,9 @@
     <div class="section-divider"></div>
 
     <!-- ABOUT MOVED UP -->
-    <section class="section section--about" id="about">
+    <section class="section section--about section--wide" id="about">
 
-      <div class="about-grid">
+      <div class="about-grid reveal">
 
         <div class="about-text">
 
@@ -267,11 +284,11 @@
     <div class="section-divider"></div>
 
     <!-- HOW IT WORKS -->
-    <section class="section section--how" id="how">
+    <section class="section section--how section--narrow section--wash" id="how">
 
       <div class="split split--center-heading">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <h2 class="section-heading section-heading--center">
             How we work together:
@@ -279,28 +296,28 @@
 
           <ol class="steps-list">
 
-            <li class="steps-list__item">
+            <li class="steps-list__item reveal">
               <span class="num-blob">1</span>
               <span class="steps-list__title">
                 Choose one habit
               </span>
             </li>
 
-            <li class="steps-list__item">
+            <li class="steps-list__item reveal">
               <span class="num-blob">2</span>
               <span class="steps-list__title">
                 Make it realistic
               </span>
             </li>
 
-            <li class="steps-list__item">
+            <li class="steps-list__item reveal">
               <span class="num-blob">3</span>
               <span class="steps-list__title">
                 Practice daily (1–5 min)
               </span>
             </li>
 
-            <li class="steps-list__item">
+            <li class="steps-list__item reveal">
               <span class="num-blob">4</span>
               <span class="steps-list__title">
                 Adjust, don’t restart
@@ -311,8 +328,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure emoji-figure--small motion-drift">
             <img src="img/grass.png" alt="" />
           </div>
         </div>
@@ -324,70 +341,107 @@
     <div class="section-divider"></div>
 
     <!-- NEW PRODUCTS -->
-    <section class="section section--products" id="products">
+    <section class="section section--products section--wide" id="products">
 
-      <h2 class="section-heading section-heading--center">
+      <h2 class="section-heading section-heading--center reveal">
         Choose your level of support
       </h2>
 
       <!-- ROW 1 -->
       <div class="products-row products-row--2">
 
-        <article class="support-card">
+        <article class="support-card support-card--soft reveal" data-flip-card tabindex="0" aria-expanded="false">
 
-          <div class="support-card__inner">
+          <div class="support-card__shell">
 
-            <p class="support-card__label">
-              Free Guide
-            </p>
+            <div class="support-card__face support-card__front">
 
-            <h3 class="support-card__title">
-              The Tiny Shifts Starter Guide
-            </h3>
+              <p class="support-card__label">
+                Free Guide
+              </p>
 
-            <p class="support-card__desc">
-              Learn how to build healthy habits that actually stick.
-            </p>
+              <h3 class="support-card__title">
+                The Tiny Shifts Starter Guide
+              </h3>
 
-            <div class="support-card__hidden">
+              <p class="support-card__desc">
+                Learn how to build healthy habits that actually stick.
+              </p>
+
+              <button class="btn btn--card" data-modal-open="guideModal">
+                Get Free Guide →
+              </button>
+
+            </div>
+
+            <div class="support-card__face support-card__back">
+
+              <p class="support-card__label">
+                What it gives you
+              </p>
+
               <p>
                 Simple practical steps you can start using immediately.
               </p>
-            </div>
 
-            <button class="btn btn--card" data-modal-open="guideModal">
-              Get Free Guide →
-            </button>
+              <p>
+                Best when you want a gentle first shift before committing to deeper support.
+              </p>
+
+              <button class="btn btn--card" data-modal-open="guideModal">
+                Get Free Guide →
+              </button>
+
+            </div>
 
           </div>
 
         </article>
 
-        <article class="support-card">
+        <article class="support-card support-card--soft reveal reveal--delay-1" data-flip-card tabindex="0"
+          aria-expanded="false">
 
-          <div class="support-card__inner">
+          <div class="support-card__shell">
 
-            <p class="support-card__label">
-              Health Action Plan Session
-            </p>
+            <div class="support-card__face support-card__front">
 
-            <h3 class="support-card__title">
-              Free Starter Session
-            </h3>
+              <p class="support-card__label">
+                Health Action Plan Session
+              </p>
 
-            <p class="support-card__desc">
-              We identify your first health habit and create your action plan.
-            </p>
+              <h3 class="support-card__title">
+                Free Starter Session
+              </h3>
 
-            <div class="support-card__hidden">
+              <p class="support-card__desc">
+                We identify your first health habit and create your action plan.
+              </p>
+
+              <a class="btn btn--card" href="https://calendly.com/" target="_blank">
+                Get My Free Session →
+              </a>
+
+            </div>
+
+            <div class="support-card__face support-card__back">
+
+              <p class="support-card__label">
+                What we map
+              </p>
+
               <p>
                 Placeholder Calendly booking integration.
               </p>
-            </div>
 
-            <a class="btn btn--card" href="https://calendly.com/" target="_blank">
-              Get My Free Session →
-            </a>
+              <p>
+                Best when you want clarity on the first realistic habit and how to begin without pressure.
+              </p>
+
+              <a class="btn btn--card" href="https://calendly.com/" target="_blank">
+                Get My Free Session →
+              </a>
+
+            </div>
 
           </div>
 
@@ -398,99 +452,154 @@
       <!-- ROW 2 -->
       <div class="products-row products-row--3">
 
-        <article class="support-card">
+        <article class="support-card reveal" data-flip-card tabindex="0" aria-expanded="false">
 
-          <div class="support-card__inner">
+          <div class="support-card__shell">
 
-            <p class="support-card__label">
-              Tiny Shifts Circle
-            </p>
+            <div class="support-card__face support-card__front">
 
-            <h3 class="support-card__price">
-              €50/month
-            </h3>
+              <p class="support-card__label">
+                Tiny Shifts Circle
+              </p>
 
-            <ul class="support-list">
-              <li>Monthly planning</li>
-              <li>Group accountability</li>
-              <li>Weekly reflection</li>
-              <li>Habit adjustments</li>
-            </ul>
+              <h3 class="support-card__price">
+                €50/month
+              </h3>
 
-            <div class="support-card__hidden">
+              <ul class="support-list">
+                <li>Monthly planning</li>
+                <li>Group accountability</li>
+                <li>Weekly reflection</li>
+                <li>Habit adjustments</li>
+              </ul>
+
+              <a class="btn btn--card" href="#">
+                Join the Group →
+              </a>
+
+            </div>
+
+            <div class="support-card__face support-card__back">
+
+              <p class="support-card__label">
+                Best for
+              </p>
+
               <p>
                 Supportive group momentum with sustainable implementation.
               </p>
-            </div>
 
-            <a class="btn btn--card" href="#">
-              Join the Group →
-            </a>
+              <p>
+                A calm monthly rhythm for people who follow through better with shared accountability.
+              </p>
+
+              <a class="btn btn--card" href="#">
+                Join the Group →
+              </a>
+
+            </div>
 
           </div>
 
         </article>
 
-        <article class="support-card">
+        <article class="support-card support-card--featured reveal reveal--delay-1" data-flip-card tabindex="0"
+          aria-expanded="false">
 
-          <div class="support-card__inner">
+          <div class="support-card__shell">
 
-            <p class="support-card__label">
-              Tiny Shifts Private
-            </p>
+            <div class="support-card__face support-card__front">
 
-            <h3 class="support-card__price">
-              €150/month
-            </h3>
+              <p class="support-card__label">
+                Tiny Shifts Private
+              </p>
 
-            <ul class="support-list">
-              <li>Daily personal accountability</li>
-              <li>Private messaging support</li>
-              <li>Habit adjustments</li>
-            </ul>
+              <h3 class="support-card__price">
+                €150/month
+              </h3>
 
-            <div class="support-card__hidden">
+              <ul class="support-list">
+                <li>Daily personal accountability</li>
+                <li>Private messaging support</li>
+                <li>Habit adjustments</li>
+              </ul>
+
+              <a class="btn btn--card" href="#">
+                Get Private Support →
+              </a>
+
+            </div>
+
+            <div class="support-card__face support-card__back">
+
+              <p class="support-card__label">
+                Best for
+              </p>
+
               <p>
                 Personal support to help habits become automatic.
               </p>
-            </div>
 
-            <a class="btn btn--card" href="#">
-              Get Private Support →
-            </a>
+              <p>
+                A closer container for people who need daily encouragement and small course-corrections.
+              </p>
+
+              <a class="btn btn--card" href="#">
+                Get Private Support →
+              </a>
+
+            </div>
 
           </div>
 
         </article>
 
-        <article class="support-card">
+        <article class="support-card reveal reveal--delay-2" data-flip-card tabindex="0" aria-expanded="false">
 
-          <div class="support-card__inner">
+          <div class="support-card__shell">
 
-            <p class="support-card__label">
-              Tiny Shifts Intensive
-            </p>
+            <div class="support-card__face support-card__front">
 
-            <h3 class="support-card__price">
-              €400/month
-            </h3>
+              <p class="support-card__label">
+                Tiny Shifts Intensive
+              </p>
 
-            <ul class="support-list">
-              <li>Weekly calls</li>
-              <li>Daily support</li>
-              <li>Deeper lifestyle changes</li>
-              <li>Behaviour tools</li>
-            </ul>
+              <h3 class="support-card__price">
+                €400/month
+              </h3>
 
-            <div class="support-card__hidden">
+              <ul class="support-list">
+                <li>Weekly calls</li>
+                <li>Daily support</li>
+                <li>Deeper lifestyle changes</li>
+                <li>Behaviour tools</li>
+              </ul>
+
+              <a class="btn btn--card" href="#">
+                Work With Me →
+              </a>
+
+            </div>
+
+            <div class="support-card__face support-card__back">
+
+              <p class="support-card__label">
+                Best for
+              </p>
+
               <p>
                 High-accountability support for deeper transformation.
               </p>
-            </div>
 
-            <a class="btn btn--card" href="#">
-              Work With Me →
-            </a>
+              <p>
+                A stronger structure when a habit is connected to broader lifestyle change.
+              </p>
+
+              <a class="btn btn--card" href="#">
+                Work With Me →
+              </a>
+
+            </div>
 
           </div>
 
@@ -499,7 +608,7 @@
       </div>
 
       <!-- VIP -->
-      <div class="vip-card">
+      <div class="vip-card reveal">
 
         <div class="vip-card__content">
 
@@ -542,11 +651,11 @@
     <div class="section-divider"></div>
 
     <!-- CASE STUDIES -->
-    <section class="section section--cases" id="cases">
+    <section class="section section--cases section--panel" id="cases">
 
-      <div class="split">
+      <div class="split split--reverse">
 
-        <div class="split__text">
+        <div class="split__text reveal">
 
           <h2 class="section-heading section-heading--center">
             Real results
@@ -574,8 +683,8 @@
 
         </div>
 
-        <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+        <div class="split__media reveal reveal--delay-2" aria-hidden="true">
+          <div class="emoji-figure motion-drift">
             <img src="img/star.png" alt="" />
           </div>
         </div>
@@ -587,9 +696,9 @@
     <div class="section-divider"></div>
 
     <!-- SOCIAL PROOF -->
-    <section class="section section--proof" id="proof">
+    <section class="section section--proof section--wide section--wash" id="proof">
 
-      <div class="split split--proof">
+      <div class="split split--proof reveal">
 
         <div class="split__text">
 
@@ -605,7 +714,7 @@
         </div>
 
         <div class="split__media" aria-hidden="true">
-          <div class="emoji-figure">
+          <div class="emoji-figure emoji-figure--small motion-drift">
             <img src="img/chart.png" alt="" />
           </div>
         </div>
@@ -617,9 +726,9 @@
     <div class="section-divider"></div>
 
     <!-- FINAL CTA -->
-    <section class="section section--final-cta" id="cta">
+    <section class="section section--final-cta section--narrow" id="cta">
 
-      <div class="split split--final">
+      <div class="split split--final reveal">
 
         <div class="split__text">
 
@@ -660,17 +769,18 @@
   </footer>
 
   <!-- GUIDE MODAL -->
-  <div class="modal" id="guideModal">
+  <div class="modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideModalTitle"
+    aria-hidden="true">
 
     <div class="modal__overlay" data-modal-close></div>
 
     <div class="modal__content">
 
-      <button class="modal__close" data-modal-close>
+      <button class="modal__close" data-modal-close aria-label="Close modal">
         ×
       </button>
 
-      <h2 class="modal__title">
+      <h2 class="modal__title" id="guideModalTitle">
         Get The Tiny Shifts Starter Guide
       </h2>
 
@@ -703,17 +813,17 @@
   </div>
 
   <!-- VIP MODAL -->
-  <div class="modal" id="vipModal">
+  <div class="modal" id="vipModal" role="dialog" aria-modal="true" aria-labelledby="vipModalTitle" aria-hidden="true">
 
     <div class="modal__overlay" data-modal-close></div>
 
     <div class="modal__content">
 
-      <button class="modal__close" data-modal-close>
+      <button class="modal__close" data-modal-close aria-label="Close modal">
         ×
       </button>
 
-      <h2 class="modal__title">
+      <h2 class="modal__title" id="vipModalTitle">
         Request VIP Support
       </h2>
 
@@ -748,4 +858,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
