@@ -34,6 +34,7 @@
   --layout-gap: clamp(1.75rem, 4vw, 3rem);
   --shell-width: 1040px;
   --shell-outer-width: calc(var(--shell-width) + (var(--space-inner) * 2));
+  --card-pad: clamp(1.35rem, 2.4vw, 1.65rem);
 }
 
 *,
@@ -160,7 +161,7 @@ main,
 
 .section--wash,
 .section--products {
-  max-width: var(--shell-width);
+  max-width: var(--shell-outer-width);
 }
 
 .section--hero,
@@ -188,8 +189,8 @@ main,
 }
 
 .section--panel::before {
-  left: var(--space-inner);
-  right: var(--space-inner);
+  left: 0;
+  right: 0;
   background: #ffffff;
   border: 1px solid var(--border-light);
   box-shadow: none;
@@ -530,7 +531,7 @@ main,
 }
 
 .vera-photo {
-  width: min(100%, 380px);
+  width: min(100%, 340px);
   aspect-ratio: 4 / 5;
   margin-left: auto;
   border: 1px solid var(--border-light);
@@ -545,13 +546,17 @@ main,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  align-items: stretch;
 }
 
 .icon-item {
   border: 1px solid var(--border-light);
   border-radius: 14px;
-  padding: 1.25rem 1.4rem 1.35rem;
+  padding: var(--card-pad);
   background: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon-item__mark {
@@ -570,6 +575,10 @@ main,
   inset: 0.55rem;
   border-radius: 50%;
   background: var(--sage);
+}
+
+.icon-item p {
+  margin: 0;
 }
 
 .micro-shifts-label {
@@ -643,8 +652,8 @@ main,
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(260px, 0.82fr);
-  gap: clamp(2rem, 4vw, 3.25rem);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.72fr);
+  gap: var(--layout-gap);
   align-items: center;
 }
 
@@ -943,8 +952,8 @@ main,
 
 .section--about,
 .section--cases {
-  padding-top: clamp(3.5rem, 6vw, 5rem);
-  padding-bottom: clamp(3.5rem, 6vw, 5rem);
+  padding-top: clamp(3.6rem, 6vw, 5.2rem);
+  padding-bottom: clamp(3.6rem, 6vw, 5.2rem);
 }
 
 .section--why,
@@ -955,20 +964,26 @@ main,
 }
 
 .section--about .about-text {
-  max-width: 610px;
+  max-width: 620px;
+}
+
+.section--about {
+  max-width: var(--shell-outer-width);
 }
 
 .case-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  align-items: stretch;
 }
 
 .case-card {
   background: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: 14px;
-  padding: 1.5rem;
+  padding: var(--card-pad);
+  height: 100%;
 }
 
 .case-card h3 {
@@ -977,10 +992,16 @@ main,
   color: var(--text-strong);
 }
 
+.icon-item p,
+.case-card p,
+.metric p {
+  overflow-wrap: anywhere;
+}
+
 .metric {
   border-top: 1px solid var(--border-light);
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
+  margin-top: 1rem;
+  padding: var(--card-pad) 0 0;
 }
 
 .metric strong {
@@ -990,37 +1011,6 @@ main,
   line-height: 1;
   color: var(--brown);
   margin-bottom: 0.75rem;
-}
-
-@media (min-width: 901px) {
-  .section--cases > .reveal {
-    display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(230px, 0.62fr);
-    column-gap: clamp(1.5rem, 3vw, 2.4rem);
-    row-gap: 1rem;
-    align-items: stretch;
-  }
-
-  .section--cases .section-heading {
-    grid-column: 1 / -1;
-    margin-bottom: 1rem;
-  }
-
-  .section--cases .case-grid {
-    grid-column: 1;
-  }
-
-  .section--cases .metric {
-    grid-column: 2;
-    margin-top: 0;
-    padding: 1.5rem 0 1.5rem 1.5rem;
-    border-top: 0;
-    border-left: 1px solid var(--border-light);
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 
 .final-cta__emphasis {
@@ -1190,12 +1180,12 @@ main,
   }
 
   .about-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.78fr);
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.72fr);
+    gap: var(--layout-gap);
   }
 
   .vera-photo {
-    width: min(100%, 330px);
+    width: min(100%, 320px);
   }
 
   .products-row--2 {
@@ -1265,11 +1255,16 @@ main,
   }
 
   .icon-item {
-    padding: 1.15rem 1.2rem 1.25rem;
+    padding: var(--card-pad);
+    min-height: 14rem;
   }
 
   .icon-item__mark {
     margin-bottom: 0.65rem;
+  }
+
+  .case-card {
+    min-height: 19.25rem;
   }
 
   .hero-actions {
