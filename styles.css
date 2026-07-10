@@ -293,7 +293,7 @@ main,
 .section--hero::before {
   content: "";
   position: absolute;
-  inset: 1.6rem var(--space-inner) 2.2rem;
+  inset: 1.6rem 0 2.2rem;
   z-index: -1;
   border-radius: 34px;
   background: #ffffff;
@@ -1066,6 +1066,10 @@ main,
   box-shadow: none;
   transform: translateY(1rem) scale(0.98);
   transition: transform 0.25s ease;
+}
+
+.section--final-cta {
+  max-width: var(--shell-outer-width);
 }
 
 .section--final-cta .split__text {
