@@ -1,658 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vera | Micro Life Changes</title>
-
+  <meta name="description" content="Vera Nepomniashchikh — 1-on-1 Habit Coach and Your Healthy Lifestyle Advocate." data-i18n-content="metaDescription" />
+  <title>Vera Nepomniashchikh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="site-header" aria-label="Primary navigation" data-i18n-aria-label="primaryNavLabel">
+    <a class="brand brand--desktop" href="#about" data-i18n="brandFull">VERA NEPOMNIASHCHIKH</a>
+    <a class="brand brand--mobile" href="#about" data-i18n="brandMobile">VERA</a>
 
-  <!-- Floating background elements -->
-  <div class="bg-emoji" aria-hidden="true">
-    <span class="bg-emoji__item" style="--x:6;--y:12;--s:56px;--r:-10deg;--d:58s;--delay:-12s;"><img
-        src="img/branch.png" alt="" /></span>
-    <span class="bg-emoji__item" style="--x:10;--y:86;--s:48px;--r:8deg;--d:64s;--delay:-28s;"><img src="img/star.png"
-        alt="" /></span>
-    <span class="bg-emoji__item" style="--x:94;--y:18;--s:60px;--r:12deg;--d:62s;--delay:-6s;"><img src="img/brain.png"
-        alt="" /></span>
-    <span class="bg-emoji__item" style="--x:96;--y:78;--s:54px;--r:-8deg;--d:70s;--delay:-18s;"><img src="img/pazzl.png"
-        alt="" /></span>
-    <span class="bg-emoji__item" style="--x:4;--y:52;--s:52px;--r:14deg;--d:66s;--delay:-22s;"><img src="img/grass.png"
-        alt="" /></span>
-    <span class="bg-emoji__item" style="--x:98;--y:52;--s:50px;--r:-14deg;--d:72s;--delay:-34s;"><img
-        src="img/chart.png" alt="" /></span>
-  </div>
-  <div class="ambient-layer" aria-hidden="true">
-    <span class="ambient-layer__shape ambient-layer__shape--one"></span>
-    <span class="ambient-layer__shape ambient-layer__shape--two"></span>
-    <span class="ambient-layer__shape ambient-layer__shape--three"></span>
-  </div>
+    <nav class="nav nav--desktop" aria-label="Main navigation" data-i18n-aria-label="mainNavLabel">
+      <a href="#work" data-i18n="navWork">WORK WITH ME</a>
+      <a href="#contact" data-i18n="navContact">CONTACT</a>
+      <div class="language-switch" aria-label="Language switcher" data-i18n-aria-label="languageLabel">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+    </nav>
 
-  <header class="site-header">
-    <span class="logo-script">Vera | Micro Life Changes</span>
-    <span class="logo-sub">Micro Life Changes coaching</span>
+    <div class="mobile-actions">
+      <div class="language-switch" aria-label="Language switcher" data-i18n-aria-label="languageLabel">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n="menu">MENU</button>
+    </div>
+
+    <nav class="nav nav--mobile" id="mobile-menu" aria-label="Mobile navigation" data-i18n-aria-label="mobileNavLabel" hidden>
+      <a href="#work" data-i18n="navWork">WORK WITH ME</a>
+      <a href="#contact" data-i18n="navContact">CONTACT</a>
+    </nav>
   </header>
 
   <main>
+    <section class="intro-section" id="about" aria-labelledby="about-title">
+      <div class="portrait-slot">
+        <img class="portrait-image" src="img/foto_vera.jpg" alt="Vera Nepomniashchikh portrait" data-i18n-alt="portraitAlt" />
+      </div>
 
-    <section class="section section--hero" id="hero">
-      <img class="hero-banner" src="img/habit-tracker.jpg" alt="Habit tracker notebook with checked habits" />
+      <div class="intro-copy">
+        <h1 id="about-title" data-i18n="name">Vera Nepomniashchikh</h1>
+        <p class="role-line" data-i18n="roleOne">1-on-1 Habit Coach</p>
+        <p class="role-line" data-i18n="roleTwo">Your Healthy Lifestyle Advocate</p>
+        <div class="method-block">
+          <p data-i18n="method">Work method: baby steps</p>
+          <p data-i18n="basis">Based on neurophysiology and the Kaizen approach.</p>
+        </div>
+      </div>
+    </section>
 
-      <div class="split split--hero">
+    <section class="illustration-section" aria-label="Baby steps illustration" data-i18n-aria-label="illustrationLabel">
+      <div class="illustration-slot">
+        <img class="staircase-image" src="img/ChatGPT Image 10 сент. 2026 г., 14_40_07.png" alt="Graphite staircase illustration of baby steps for healthy habits" data-i18n-alt="illustrationAlt" data-i18n-src="staircaseSrc" />
+      </div>
+    </section>
 
-        <div class="split__text reveal">
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="work-heading">
+        <div class="section-label" data-i18n="workLabel">WORKING WITH ME</div>
+        <h2 id="work-title" data-i18n="workTitle">What working with me looks like</h2>
+      </div>
 
-          <p class="hero-role">Micro Life Changes coaching</p>
-
-          <h1 class="hero-title">
-            Consistent health without the willpower tax.
-          </h1>
-
-          <div class="hero-body">
-            <p>
-              You already know what to do. You just don't have the energy to force it anymore. I help you turn health intentions into automatic habits in 1–5 minutes a day.
-            </p>
-          </div>
-
-          <div class="hero-actions">
-            <button class="btn btn--primary" data-modal-open="guideModal">
-              Get Free Guide →
-            </button>
-
-            <a class="btn btn--secondary" href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
-              Get My Free Session →
-            </a>
-          </div>
-
+      <div class="work-layout">
+        <div class="work-visual" data-phone-visual>
+          <img src="img/phone_en.jpg" alt="Phone conversation showing daily habit support" data-i18n-alt="phoneAlt" />
         </div>
 
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--why section--wash" id="why">
-
-      <div class="editorial-copy reveal">
-
-        <h2 class="section-heading">
-          Why your brain resists "big changes"
-        </h2>
-
-        <p>
-          Your brain evolved to protect your homeostasis. It is wired to preserve the status quo at all costs. This is why any change, even a "good" one, is automatically flagged as a threat to your internal balance.
-        </p>
-
-        <p>
-          Habits that hurt us are often the hardest to break. Because of how our neural pathways are formed, unwanted behaviors become deeply "sticky." You don’t need more discipline to change them. You need to understand the neurophysiology of how a habit is actually built and dismantled.
-        </p>
-
-        <p>
-          We plan our time, but we forget to plan our energy. Having an hour for the gym after work means nothing if your nervous system is depleted or your hormonal cycle is at a low point. You cannot build sustainable habits on a foundation of exhaustion. A stressed brain will always default to the path of least resistance.
-        </p>
-
-        <p class="accent-statement">
-          The truth is you don’t need more discipline. You need a strategy that works even when your energy is at zero.
-        </p>
-
-      </div>
-
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--about section--wide" id="about">
-
-      <div class="about-grid reveal">
-
-        <div class="about-text">
-
-          <h2 class="section-heading">
-            Hi, I’m Vera.
-          </h2>
-
-          <p class="about-role">
-            Neurointegration Trainer, Habit Coach
-          </p>
-
-          <p>
-            I don’t believe in treating the body like a disobedient machine. I spent years in that trap, struggling to keep up with daily life and terrified that constant headaches would eventually cost me my career.
-          </p>
-
-          <p>
-            I finally broke through when I realized that the brain and body work as one single system. By aligning my habits with my biology, I turned health into the path of least resistance. Now, I help you bridge that same gap between knowing what to do and actually doing it.
-          </p>
-
+        <div class="work-content">
+          <ol class="work-list">
+            <li>
+              <span class="step-number">01</span>
+              <div>
+                <h3 data-i18n="step1Title">Live consultation</h3>
+                <p data-i18n="step1Text">We review your medical recommendations, health history, and daily routine.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div>
+                <h3 data-i18n="step2Title">Choosing 1 action</h3>
+                <p data-i18n="step2Text">We pick a single habit, fit it into your calendar, and map out a backup plan for chaotic days.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div>
+                <h3 data-i18n="step3Title">Daily chat support</h3>
+                <p data-i18n="step3Text">I message you every day. If it works, we lock it in. If it's not working, we tweak the approach. If it falls apart completely, we hop on a call and re-strategise.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <div>
+                <h3 data-i18n="step4Title">Navigating weeks 2–3</h3>
+                <p data-i18n="step4Text">When resistance kicks in, we re-evaluate together so you don't drop out.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">05</span>
+              <div>
+                <h3 data-i18n="step5Title">Monthly review</h3>
+                <p data-i18n="step5Text">We meet every 30 days to add the next habit once the previous one is fully automated.</p>
+              </div>
+            </li>
+          </ol>
         </div>
+      </div>
 
-        <div class="about-visual">
-          <div class="vera-photo" role="img" aria-label="Professional photo of Vera"></div>
+      <div class="price-block" aria-label="Price" data-i18n-aria-label="priceLabel">
+        <p class="price" data-i18n="price">€50 / week</p>
+        <p data-i18n="priceSupport">1-on-1 personal support</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title" data-i18n="contactTitle">Let's talk.</h2>
+      </div>
+
+      <div class="contact-actions">
+        <a class="contact-button" href="#" data-contact-platform="whatsapp">
+          <span class="platform-icon"></span>
+          <span data-i18n="whatsappButton">Message me on WhatsApp →</span>
+        </a>
+        <a class="contact-button" href="#" data-contact-platform="telegram">
+          <span class="platform-icon"></span>
+          <span data-i18n="telegramButton">Message me on Telegram →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="position-section" id="position" aria-labelledby="position-title">
+      <h2 id="position-title" data-i18n="positionTitle">We were not meant to live like this.</h2>
+      <div class="position-copy">
+        <p data-i18n="positionBody1">Our bodies evolved for a very different life.</p>
+        <p data-i18n="positionBody2">We move less.<br>We sit more.<br>We sleep with a phone next to our face.<br>We eat around the clock.<br>And then we wonder why our bodies don't feel great.</p>
+        <p data-i18n="positionBody3">Modern life makes unhealthy choices incredibly easy.</p>
+        <p data-i18n="positionBody4">But we're not stuck with it.</p>
+        <p class="position-emphasis" data-i18n="positionEmphasis">Small changes can change the way you live.</p>
+        <p data-i18n="positionBody5">I write about health, habits, behaviour and what we can actually do about it.</p>
+      </div>
+
+      <div class="read-more-block">
+        <p data-i18n="readMoreLabel">Read more:</p>
+        <div class="social-links" data-social-links>
         </div>
-
       </div>
-
     </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--works section--panel" id="works">
-
-      <div class="reveal">
-
-        <h2 class="section-heading">
-          With me, you can:
-        </h2>
-
-        <div class="icon-grid">
-
-          <article class="icon-item">
-            <span class="icon-item__mark" aria-hidden="true"></span>
-            <p>
-              Elevate your sleep, energy, and movement without adding another stressful, time-consuming task to your already packed to-do list.
-            </p>
-          </article>
-
-          <article class="icon-item">
-            <span class="icon-item__mark" aria-hidden="true"></span>
-            <p>
-              Stop forcing yourself because we use neurointegration to align habits with your brain’s chemistry, so your mind and body naturally stop resisting change.
-            </p>
-          </article>
-
-          <article class="icon-item">
-            <span class="icon-item__mark" aria-hidden="true"></span>
-            <p>
-              Master the art of micro-steps by practicing for just 1–5 minutes a day to bypass the friction and actually stick to it.
-            </p>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--kaizen section--wash" id="micro-shifts">
-
-      <div class="reveal">
-
-        <h2 class="section-heading">
-          Science-based steps that protect your energy instead of draining it.
-        </h2>
-
-        <p class="micro-shifts-label">
-          Micro Shifts
-        </p>
-
-        <div class="editorial-copy editorial-copy--compact">
-
-          <p>
-            I use Neurointegration to bypass your brain’s resistance. We build Micro Shifts that are:
-          </p>
-
-          <p>
-            Small enough to start even on your most exhausted days.
-          </p>
-
-          <p>
-            Simple enough to repeat without needing a perfect environment.
-          </p>
-
-          <p>
-            Powerful enough to change your life because consistency beats intensity every time.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--products" id="products">
-
-      <h2 class="section-heading section-heading--center reveal">
-        Services
-      </h2>
-
-      <div class="products-row products-row--2">
-
-        <article class="service-offer reveal">
-
-          <div class="service-card service-card--soft">
-
-            <div class="service-card__heading">
-              <p class="support-card__label">
-                Free Guide
-              </p>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M5 5.5c1.8-.9 3.7-.9 5.5 0v13c-1.8-.9-3.7-.9-5.5 0v-13z" />
-                  <path d="M19 5.5c-1.8-.9-3.7-.9-5.5 0v13c1.8-.9 3.7-.9 5.5 0v-13z" />
-                  <path d="M10.5 5.5h3" />
-                </svg>
-              </span>
-            </div>
-
-            <p class="service-card__price-row">
-              FREE
-            </p>
-
-            <p class="support-card__desc">
-              Get the handbook "How to make your habits stick" and start your first micro-shift.
-            </p>
-
-            <button class="btn btn--card" data-modal-open="guideModal">
-              Get the Handbook →
-            </button>
-
-          </div>
-
-          <div class="service-details" data-service-details>
-
-            <p class="support-card__label">
-              Free Guide
-            </p>
-
-            <ul class="support-list">
-              <li>The science behind why small steps actually stick</li>
-              <li>How to use cues and context to automate routines</li>
-              <li>The role of emotional rewards in habit formation</li>
-            </ul>
-
-          </div>
-
-        </article>
-
-        <article class="service-offer reveal reveal--delay-1">
-
-          <div class="service-card service-card--soft">
-
-            <div class="service-card__heading">
-              <p class="support-card__label">
-                Free Starter Session
-              </p>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="8" />
-                  <path d="M14.8 9.2l-1.7 3.9-3.9 1.7 1.7-3.9 3.9-1.7z" />
-                  <path d="M12 3.8v1.6" />
-                  <path d="M12 18.6v1.6" />
-                </svg>
-              </span>
-            </div>
-
-            <p class="service-card__price-row">
-              FREE
-            </p>
-
-            <p class="support-card__desc">
-              Identify your first realistic habit and create a plan that fits your energy level.
-            </p>
-
-            <a class="btn btn--card" href="https://calendly.com/" target="_blank">
-              Get My Free Session →
-            </a>
-
-          </div>
-
-          <div class="service-details" data-service-details>
-
-            <p class="support-card__label">
-              Free Starter Session
-            </p>
-
-            <ul class="support-list">
-              <li>20-minute 1-2-1 clarity call</li>
-              <li>Personal strategy for your current situation</li>
-              <li>No pressure to continue — just a clear first step</li>
-            </ul>
-
-          </div>
-
-        </article>
-
-      </div>
-
-      <div class="products-row products-row--2">
-
-        <article class="service-offer service-offer--featured reveal">
-
-          <div class="service-card service-card--featured">
-
-            <div class="service-card__heading">
-              <h3 class="support-card__price">
-                Micro Shift Private
-              </h3>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M6.5 16.5h-1.2a2.3 2.3 0 0 1-2.3-2.3v-6.4a2.3 2.3 0 0 1 2.3-2.3h13.4a2.3 2.3 0 0 1 2.3 2.3v6.4a2.3 2.3 0 0 1-2.3 2.3h-6.2l-4.6 3.7v-3.7z" />
-                  <path d="M7.5 10h9" />
-                  <path d="M7.5 12.8h5.6" />
-                </svg>
-              </span>
-            </div>
-
-            <p class="service-card__price-row">
-              €150/month
-            </p>
-
-            <ul class="support-list">
-              <li>Adjust your habits in real-time with my daily support in a private chat.</li>
-            </ul>
-
-            <a class="btn btn--card" href="#">
-              Get Private Support
-            </a>
-
-          </div>
-
-          <div class="service-details" data-service-details>
-
-            <p class="support-card__label">
-              Micro Shift Private
-            </p>
-
-            <ul class="support-list">
-              <li>Strategic 1-2-1 kick-off session</li>
-              <li>Daily personal chat support with me</li>
-              <li>Tools tailored to your schedule and brain</li>
-            </ul>
-
-          </div>
-
-        </article>
-
-        <article class="service-offer reveal reveal--delay-1">
-
-          <div class="service-card">
-
-            <div class="service-card__heading">
-              <h3 class="support-card__price">
-                Micro Shift Intensive
-              </h3>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M9.2 18.2c-2.7 0-4.9-2-4.9-4.6 0-1.6.8-3 2.1-3.9-.2-.5-.3-.9-.3-1.4 0-2 1.6-3.6 3.6-3.6.7 0 1.3.2 1.8.5.7-1.7 2.3-2.9 4.2-2.9 2.7 0 4.8 2.2 4.8 4.8 0 .6-.1 1.1-.3 1.6 1.3.9 2.1 2.3 2.1 4 0 2.8-2.3 5-5.1 5h-1" />
-                  <path d="M12 5.2v14.6" />
-                  <path d="M8.6 9.3c1.2 0 2.2.8 3.4 2" />
-                  <path d="M15.8 8.2c-1.3.1-2.6.9-3.8 2.1" />
-                </svg>
-              </span>
-            </div>
-
-            <p class="service-card__price-row">
-              €400/month
-            </p>
-
-            <ul class="support-list">
-              <li>Rebuild your lifestyle with weekly sessions and a full neurobiology strategy.</li>
-            </ul>
-
-            <a class="btn btn--card" href="#">
-              Work With Me
-            </a>
-
-          </div>
-
-          <div class="service-details" data-service-details>
-
-            <p class="support-card__label">
-              Micro Shift Intensive
-            </p>
-
-            <ul class="support-list">
-              <li>Weekly deep-dive coaching sessions</li>
-              <li>Full strategic planning for all life areas</li>
-              <li>Daily chat and deep-access neurobiology tools</li>
-            </ul>
-
-          </div>
-
-        </article>
-
-      </div>
-
-      <div class="vip-card reveal">
-
-        <div class="vip-card__content">
-
-          <div class="vip-card__left">
-
-            <p class="support-card__label">
-              Micro Life Changes coaching by Vera.
-            </p>
-
-            <div class="vip-card__heading">
-              <h3 class="vip-card__price">
-                Micro Shift VIP
-              </h3>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4.5 17.5h15" />
-                  <path d="M6 17.5l-1-10 4.4 4.2L12 5l2.6 6.7L19 7.5l-1 10" />
-                  <path d="M7.5 20h9" />
-                </svg>
-              </span>
-            </div>
-
-            <p class="service-card__price-row service-card__price-row--vip">
-              €1000/month
-            </p>
-
-            <p class="vip-card__lead">
-              Navigate your daily routine with high-touch support and daily calls.
-            </p>
-
-            <button class="btn btn--primary" data-modal-open="vipModal">
-              Request VIP Support
-            </button>
-
-            <p class="vip-note">
-              Only 2 spots available for maximum focus.
-            </p>
-
-          </div>
-
-          <div class="vip-card__right">
-            <ul class="support-list support-list--vip">
-              <li>Daily 1-2-1 calls (Mon–Fri) to adjust your plan in real-time.</li>
-              <li>Direct support for high-stress situations and schedule changes.</li>
-              <li>Full implementation of neurobiology tools into your career and life.</li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--cases section--panel" id="cases">
-
-      <div class="reveal">
-
-          <h2 class="section-heading section-heading--center">
-            Real Results
-          </h2>
-
-          <div class="case-grid">
-
-            <article class="case-card">
-              <h3>Chiara</h3>
-              <p>
-                She struggled with back and knee pain and found it impossible to stay consistent. She started with just 1 minute. A year later, she runs twice a week for 40 minutes and never misses her daily stretching routine.
-              </p>
-            </article>
-
-            <article class="case-card">
-              <h3>Daria</h3>
-              <p>
-                Burdened by debt and avoiding financial tracking in her business, she started with 5 minutes of journaling. Within 3 months, she built a clear tracking system and made her first inventory purchase using profit, not credit.
-              </p>
-            </article>
-
-          </div>
-
-          <div class="metric">
-            <strong>95% consistency</strong>
-            <p>
-              My clients reach this level by focusing on small, repeatable actions.
-            </p>
-          </div>
-
-        </div>
-
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="section section--final-cta section--narrow" id="cta">
-
-      <div class="split split--final reveal">
-
-        <div class="split__text">
-
-          <p>
-            You don’t need more time. You don’t need a better plan. You need someone to help you find the strategy that works specifically for you. Once you have that, you can handle the rest.
-          </p>
-
-          <div class="hero-actions hero-actions--center">
-
-            <a class="btn btn--secondary" href="https://calendly.com/" target="_blank">
-              Book Free Session
-            </a>
-
-            <button class="btn btn--primary" data-modal-open="guideModal">
-              Get Free Guide
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="section section--human-visual section--wash" id="habits">
-      <img src="img/habit-tracker.jpg" alt="Habit tracker notebook with checked habits" />
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <p>
-      © Vera | Micro Life Changes 2026
-      <span class="footer-sep">|</span>
-      Micro Life Changes coaching
-    </p>
+    <div>
+      <p data-i18n="footerName">Vera Nepomniashchikh</p>
+      <p data-i18n="footerRole">1-on-1 Habit Coach</p>
+    </div>
+    <div class="footer-social" data-footer-social>
+    </div>
+    <p data-i18n="copyright">© 2026 Vera Nepomniashchikh</p>
   </footer>
 
-  <!-- GUIDE MODAL -->
-  <div class="modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideModalTitle"
-    aria-hidden="true">
-
-    <div class="modal__overlay" data-modal-close></div>
-
-    <div class="modal__content">
-
-      <button class="modal__close" data-modal-close aria-label="Close modal">
-        ×
-      </button>
-
-      <h2 class="modal__title" id="guideModalTitle">
-        Get the handbook "How to make your habits stick"
-      </h2>
-
-      <p class="modal__text">
-        Get the handbook "How to make your habits stick" and start your first micro-shift.
-      </p>
-
-      <form class="modal-form">
-
-        <label class="modal-form__label">
-          Name
-
-          <input class="modal-form__input" type="text" placeholder="Your name" />
-        </label>
-
-        <label class="modal-form__label">
-          Email
-
-          <input class="modal-form__input" type="email" placeholder="your@email.com" />
-        </label>
-
-        <button type="submit" class="btn btn--primary btn--full">
-          Get the Handbook
-        </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
-  <!-- VIP MODAL -->
-  <div class="modal" id="vipModal" role="dialog" aria-modal="true" aria-labelledby="vipModalTitle" aria-hidden="true">
-
-    <div class="modal__overlay" data-modal-close></div>
-
-    <div class="modal__content">
-
-      <button class="modal__close" data-modal-close aria-label="Close modal">
-        ×
-      </button>
-
-      <h2 class="modal__title" id="vipModalTitle">
-        Request VIP Support
-      </h2>
-
-      <p class="modal__text">
-        Navigate your daily routine with high-touch support and daily calls.
-      </p>
-
-      <form class="modal-form">
-
-        <label class="modal-form__label">
-          Name
-
-          <input class="modal-form__input" type="text" />
-        </label>
-
-        <label class="modal-form__label">
-          Email
-
-          <input class="modal-form__input" type="email" />
-        </label>
-
-        <button type="submit" class="btn btn--primary btn--full">
-          Send Request
-        </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
   <script src="js/main.js"></script>
-
 </body>
-
 </html>
